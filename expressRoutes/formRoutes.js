@@ -95,10 +95,7 @@ formRoutes.route('/resposta').post(function (req, res, next) {
               res.status(400).send({message: "Este formulario ja foi repondido por este e-mail."});
             else
               res.status(400).send({message: "Error ao salvar no banco de dados: "+ err.message});          
-          }); 
-          
-                    //email.sendEmail("caio.thomas@hotmail.com", "Resposta Formulario", msg,  function(err, info){
-          //});
+          });           
         }
       });
 

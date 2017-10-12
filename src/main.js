@@ -87,9 +87,5 @@ const routes = [
 	}	
 ];
 
-
-// fallback route
 const router = new VueRouter({ routes: routes });
 new Vue(Vue.util.extend({router}, App)).$mount('#app');
-
-//https://stackoverflow.com/questions/41364891/load-form-data-via-rest-into-vue-form-generator

@@ -163,38 +163,38 @@ import auth from '../auth'
 		},
 		save(){
 
-		for(var key in this.fields){          		
-			if(this.fields[key].tipo == "text"){
-				this.fields[key].opcao = [];
-			} else {
-				this.fields[key].opcao = _.pluck(this.fields[key].subrows, 'answer');
+			for(var key in this.fields){          		
+				if(this.fields[key].tipo == "text"){
+					this.fields[key].opcao = [];
+				} else {
+					this.fields[key].opcao = _.pluck(this.fields[key].subrows, 'answer');
+				}
 			}
-		}
 
-		var form = {
-			nome: this.model.titulo,
-			desc: this.model.desc,
-			email: this.model.email,
-			perguntas: _.filter(this.fields, function(item){ return item.pergunta != ''; })
-		}
-        var uri = this.axios.defaults.baseURL + '/form/add';
-		var config = {'authorization': auth.getAuthHeader()};	        
-		this.axios.post(uri, form,  {headers: config}).then((response) => {
-		  console.log("cadastro user", response)
-		  this.$router.push({name: 'dashboard'})
-		}).catch(error => {
-		  this.error =  error.response.data.message;
-		  console.log("impime", error.response.data.message)
-		  console.log(error.response.data);
-		  console.log(error.response.status);
-		  console.log(error.response.headers);
-		});
+			var form = {
+				nome: this.model.titulo,
+				desc: this.model.desc,
+				email: this.model.email,
+				perguntas: _.filter(this.fields, function(item){ return item.pergunta != ''; })
+			}
+	        var uri = this.axios.defaults.baseURL + '/form/add';
+			var config = {'authorization': auth.getAuthHeader()};	        
+			this.axios.post(uri, form,  {headers: config}).then((response) => {
+			  console.log("cadastro user", response)
+			  this.$router.push({name: 'dashboard'})
+			}).catch(error => {
+			  this.error =  error.response.data.message;
+			  console.log("impime", error.response.data.message)
+			  console.log(error.response.data);
+			  console.log(error.response.status);
+			  console.log(error.response.headers);
+			});
 
-		console.log("save")	      	
-		console.log("fields aux", this.fields)
-		//var aux = VueFormGenerator.schema.mergeMultiObjectFields(this.schema.fields, this.fields);
-		//console.log("save")
-		}
+			console.log("save")	      	
+			console.log("fields aux", this.fields)
+			//var aux = VueFormGenerator.schema.mergeMultiObjectFields(this.schema.fields, this.fields);
+			//console.log("save")
+			}
 		}
   }
 </script>

@@ -32,7 +32,6 @@ var FormSchema = new Schema({
     trim: true,
   },  
   perguntas: [perguntasSchemas],
-  //respostas: [respostasSchemas],    
   created: {
     type: Date,
     default: Date.now

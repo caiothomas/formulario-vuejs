@@ -32,22 +32,6 @@ export default {
       }); 
   },
 
-  signup(context, creds, redirect) {
-    /*
-    context.$http.post(SIGNUP_URL, creds, (data) => {
-      localStorage.setItem('token', data.token)
-
-      this.user.authenticated = true
-
-      if(redirect) {
-        router.go(redirect)        
-      }
-
-    }).error((err) => {
-      context.error = err
-    })*/
-  },
-
   logout(context, redirect) {
     localStorage.removeItem('token')
     this.user.authenticated = false;

@@ -51,12 +51,6 @@
               this.axios.get(uri, {headers: config}).then((response) => {
                   this.items = response.data;
               });
-            },
-            deleteItem(id)
-            {
-              let uri = 'http://localhost:4000/items/delete/'+id;
-              this.items.splice(id, 1);
-              this.axios.get(uri);
             }
         }
     }
