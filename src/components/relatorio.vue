@@ -33,14 +33,14 @@
       <div style="font-size:15em;text-align:center; color:#ccc">:(</div>
     </div>  
 
-
+<!--
    <div class="panel panel-default">
       <div class="panel-heading">Model</div>
       <div class="panel-body">
         <pre v-if="model" v-html="prettyJSON(model)"></pre>
       </div>
     </div>
-
+-->
   </div>
 </template>
 

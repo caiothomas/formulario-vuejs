@@ -28,7 +28,7 @@
       </div>
     </div>
 
-
+<!-- 
    <div class="panel panel-default">
       <div class="panel-heading">Model</div>
       <div class="panel-body">
@@ -42,7 +42,7 @@
         <pre v-if="model" v-html="prettyJSON(schema)"></pre>
       </div>
     </div> 
-
+-->
   </div>
 </template>
 
