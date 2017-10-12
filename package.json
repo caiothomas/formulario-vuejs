@@ -1,0 +1,48 @@
+{
+  "name": "vuejsexpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.16.2",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-runtime": "^6.25.0",
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "nodemon": "^1.11.0",
+    "vue": "^2.4.2",
+    "vue-axios": "^2.0.2",
+    "vue-loader": "^13.0.2",
+    "vue-router": "^2.7.0",
+    "vue-template-compiler": "^2.4.2",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1"
+  },
+  "dependencies": {
+    "@websanova/vue-auth": "^2.18.3-beta",
+    "async": "^2.5.0",
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.17.2",
+    "chart.js": "^2.7.0",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "jsonwebtoken": "^8.0.1",
+    "mongoose": "^4.12.0",
+    "morgan": "^1.9.0",
+    "nodemailer": "^4.1.3",
+    "underscore": "^1.8.3",
+    "vue-chartjs": "^2.8.7",
+    "vue-form-generator": "^2.0.0",
+    "vue-resource": "^1.3.4"
+  }
+}
