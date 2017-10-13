@@ -19,9 +19,9 @@
                     <td>{{ item._id }}</td>
                     <td>{{ item.nome }}</td>
                     <td>{{ item.desc }}</td>
-                    <td><router-link :to="{name: 'view-form', params: { id: item._id }}" class="btn btn-primary">Ver</router-link></td>
-                    <td><router-link :to="{name: 'relatorio', params: { id: item._id }}" class="btn btn-success">Relatorio</router-link></td>
-                    <td><router-link :to="{name: 'grafico', params: { id: item._id }}" class="btn btn-success">Grafico</router-link></td>                    
+                    <td><router-link :to="{name: 'view-form', query: { id: item._id }}" class="btn btn-primary">Ver</router-link></td>
+                    <td><router-link :to="{name: 'relatorio', query: { id: item._id }}" class="btn btn-success">Relatorio</router-link></td>
+                    <td><router-link :to="{name: 'grafico', query: { id: item._id }}" class="btn btn-success">Grafico</router-link></td>                    
                 </tr>
             </tbody>
         </table>

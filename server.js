@@ -86,3 +86,5 @@ app.listen(app.get('port'), function () {
  console.log("Carregando endereco WEB ", process.env['BASEHOST'])
 
 });
+
+module.exports = app; // for testing
