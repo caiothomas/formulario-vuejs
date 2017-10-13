@@ -7,3 +7,13 @@ SENHA=
 BASEHOST=http://localhost:3001
 BASEHOSTAPI=http://localhost:4000/api
 ```
+
+- Para executar Vue.Js
+```
+nodemon server.js 
+npm start
+```
+- Para executar teste utilize.
+```
+npm test
+```
